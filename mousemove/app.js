@@ -1,3 +1,4 @@
+// When mousing over red box show coordinates
 document.getElementsByClassName("red-box")[0].onmousemove = function(event)
 {
     var x = event.clientX;
