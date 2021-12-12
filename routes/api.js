@@ -13,11 +13,11 @@ const recycledItems = [
         _id: 1234, 
     },
     {   
-        name:'Can',
-        description: 'Aluminum',
-        recyclable: true,
-        quantity: 5,
-        ppu: 0.5,
+        name:'To-go container',
+        description: 'Polystyrene Foam',
+        recyclable: false,
+        quantity: 2,
+        ppu: 4,
         _id: 12345, 
     }, 
 ];
