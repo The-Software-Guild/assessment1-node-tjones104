@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./navbar";
 import Home from "./home";
-import PostRecyclables from "./pages/postRecyclables";
-import GetRecyclables from "./pages/getRecyclables";
-import PutRecyclables from "./pages/putRecyclables";
-import DeleteRecyclables from "./pages/deleteRecyclables";
-import NotFound from "./pages/NotFound";
+import PostRecyclables from "./components/postRecyclables";
+import GetRecyclables from "./components/getRecyclables";
+import PutRecyclables from "./components/putRecyclables";
+import DeleteRecyclables from "./components/deleteRecyclables";
+import UnknownPage from "./UnknownPage";
 import "./App.css";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
               <DeleteRecyclables />
             </Route>
             <Route path="*">
-              <NotFound />
+              <UnknownPage />
             </Route>
           </Switch>
         </div>

@@ -4,6 +4,8 @@
   margin: 0;
   font-family: "Open Sans";
   color: rgb(0, 0, 0);
+  /* color: rgb(232, 230, 227);
+  background-color: #131516; */
 }
 
 .navbar {
@@ -13,10 +15,13 @@
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
   background-color: #ffffff;
+  /* border-bottom: 1px solid rgb(52, 56, 58);
+  background-color: rgb(24, 26, 27); */
 }
 
 .navbar h1 {
   color: #09bc8a;
+  /* color: rgb(75, 246, 198); */
 }
 
 .navbar .links {
@@ -24,6 +29,7 @@
 }
 
 .navbar a {
+  /* color: #3391ff; */
   margin-left: 16px;
   text-decoration: none;
   padding: 10px;
