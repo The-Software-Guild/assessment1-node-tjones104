@@ -58,7 +58,7 @@ class PostRecyclables extends Component {
           <label>Recyclable:</label>
           <select
             value={this.state.recyclable}
-            name="Recyclable"
+            name="recyclable"
             onChange={this.handleChange}
           >
             <option value="true">true</option>

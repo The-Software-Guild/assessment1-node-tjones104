@@ -30,7 +30,6 @@ router.get("/itemsIntake", (req, res) => {
 // POST
 router.post("/itemsIntake", (req, res) => {
   let { name, description, recyclable, quantity, ppu } = req.body;
-  //console.log(name, description, recyclable, quantity, ppu);
   recycledItems.push({
     name: name,
     description: description,
@@ -40,8 +39,7 @@ router.post("/itemsIntake", (req, res) => {
     ppu: ppu,
     _id: uuidv4(),
   });
-  //res.status(204).send();
-  res.send({ type: "POST", recycledItems });
+  res.status(200).send();
 });
 
 // UPDATE
@@ -64,7 +62,7 @@ router.put("/itemsIntake/:id", (req, res) => {
       ppu: ppu,
     });
     let id = req.params.id;
-    res.send({ type: "UPDATE", id, recycledItems });
+    res.status(200).send();
   } else {
     res.status(404).send("The id was not found");
   }
@@ -82,8 +80,7 @@ router.delete("/itemsIntake/:id", (req, res) => {
     });
     recycledItems.splice(index, 1);
     let id = req.params.id;
-    res.send({ type: "DELETE", id, recycledItems });
-    //res.status(204).send();
+    res.status(200).send();
   } else {
     res.status(404).send("The id was not found");
   }
