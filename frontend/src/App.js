@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./navbar";
 import Home from "./home";
 import PostRecyclables from "./components/postRecyclables";
@@ -14,26 +14,20 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/GetRecyclables">
-              <GetRecyclables />
-            </Route>
-            <Route path="/PostRecyclables">
-              <PostRecyclables />
-            </Route>
-            <Route path="/PutRecyclables">
-              <PutRecyclables />
-            </Route>
-            <Route path="/DeleteRecyclables">
-              <DeleteRecyclables />
-            </Route>
-            <Route path="*">
-              <UnknownPage />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route path="/GetRecyclables" element={<GetRecyclables />}></Route>
+            <Route
+              path="/PostRecyclables"
+              element={<PostRecyclables />}
+            ></Route>
+            <Route path="/PutRecyclables" element={<PutRecyclables />}></Route>
+            <Route
+              path="/DeleteRecyclables"
+              element={<DeleteRecyclables />}
+            ></Route>
+            <Route path="*" element={<UnknownPage />}></Route>
+          </Routes>
         </div>
       </div>
     </Router>
