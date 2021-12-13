@@ -35,7 +35,8 @@ const PutRecyclables = () => {
 
 
     return (
-        <div className="create">
+        <div className="put-item">
+        <div>
         <h2>Update an item</h2>
         <form onSubmit={handleSubmit}>
             <label>Id:</label>
@@ -83,8 +84,9 @@ const PutRecyclables = () => {
             />
             <button>Update Item</button>
         </form>
-        <div className="get-list">
-        <table class="show-list" >
+        </div>
+        <div className="get-list-put">
+        <table className="show-list" >
            <thead>
                <tr>
                    <th>Name</th>
@@ -97,7 +99,7 @@ const PutRecyclables = () => {
            </thead>
            {recycledItems.map(items => (
              <tr key={items.id}>
-               <td>{items.name}</td>
+               <td className="name">{items.name}</td>
                <td>{items.description}</td>
                <td>{items.recyclable.toString()}</td>
                <td>{items.quantity}</td>

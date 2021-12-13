@@ -10,7 +10,7 @@ const recycledItems = [
         recyclable: true,
         quantity: 1,
         ppu: 2,
-        _id: 1234, 
+        _id: uuidv4(), 
     },
     {   
         name:'To-go container',
@@ -18,7 +18,7 @@ const recycledItems = [
         recyclable: false,
         quantity: 2,
         ppu: 4,
-        _id: 12345, 
+        _id: uuidv4(), 
     }, 
 ];
 

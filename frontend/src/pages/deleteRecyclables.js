@@ -1,4 +1,4 @@
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 
@@ -27,8 +27,9 @@ const DeleteRecyclables = () => {
       }, [])
 
     return (
-        <div className="get-list">
-        <h1>Type in the id of the item you would like to delete</h1>
+      <div className="delete-item">
+        <div>
+        <h2>Delete an Item</h2>
         <form onSubmit={handleSubmit}>
         <label>Id:</label>
             <input 
@@ -39,29 +40,32 @@ const DeleteRecyclables = () => {
             />
             <button>Delete Item</button>
         </form>
-        <table class="show-list" >
-           <thead>
-               <tr>
-                   <th>Name</th>
-                   <th>Description</th>
-                   <th>Recyclable</th>
-                   <th>Quantity</th>
-                   <th>Price per Unit</th>
-                   <th>Id</th>
-               </tr>
-           </thead>
-           {recycledItems.map(items => (
-             <tr key={items.id}>
-               <td>{items.name}</td>
-               <td>{items.description}</td>
-               <td>{items.recyclable.toString()}</td>
-               <td>{items.quantity}</td>
-               <td>{items.ppu}</td>
-               <td>{items._id}</td>
-             </tr>
-           ))}
-       </table>
       </div>
+      <div className="get-list-delete">
+      <table className="show-list" >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Recyclable</th>
+                <th>Quantity</th>
+                <th>Price per Unit</th>
+                <th>Id</th>
+            </tr>
+        </thead>
+        {recycledItems.map(items => (
+          <tr key={items.id}>
+            <td className="name">{items.name}</td>
+            <td>{items.description}</td>
+            <td>{items.recyclable.toString()}</td>
+            <td>{items.quantity}</td>
+            <td>{items.ppu}</td>
+            <td>{items._id}</td>
+          </tr>
+        ))}
+      </table>
+    </div>
+    </div>
     );
 }
  

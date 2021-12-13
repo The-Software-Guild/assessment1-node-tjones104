@@ -15,7 +15,8 @@ const GetRecyclables = () => {
 
   return (
       <div className="get-list">
-        <table class="show-list" >
+        <h2>Recycled Items</h2>
+        <table className="show-list" >
            <thead>
                <tr>
                    <th>Name</th>
@@ -28,7 +29,7 @@ const GetRecyclables = () => {
            </thead>
            {recycledItems.map(items => (
              <tr key={items.id}>
-               <td>{items.name}</td>
+               <td className="name">{items.name}</td>
                <td>{items.description}</td>
                <td>{items.recyclable.toString()}</td>
                <td>{items.quantity}</td>

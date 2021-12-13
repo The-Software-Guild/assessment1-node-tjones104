@@ -22,47 +22,48 @@ const PostRecyclables = () => {
     }
     
     return (
-        <div className="create">
-        <h2>Add a new item</h2>
-        <form onSubmit={handleSubmit}>
-            <label>Name:</label>
-            <input 
-            type="text" 
-            required 
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            />
-            <label>Description:</label>
-            <input 
-            type="text" 
-            required 
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            />
-            <label>Recyclable:</label>
-            <select
-            value={recyclable}
-            onChange={(e) => setRecyclable(e.target.value)}
-            >
-            <option value="true">true</option>
-            <option value="false">false</option>
-            </select>
-            <label>Quantity:</label>
-            <input 
-            type="number" 
-            required 
-            value={quantity}
-            onChange={(e) => setQuantity(e.target.value)}
-            />
-            <label>Price per Unit:</label>
-            <input 
-            type="number" 
-            required 
-            value={ppu}
-            onChange={(e) => setPPU(e.target.value)}
-            />
-            <button>Add Item</button>
-        </form>
+        <div className="post-item">
+            <div></div>
+            <h2>Add a new item</h2>
+            <form className="post-form"onSubmit={handleSubmit}>
+                <label>Name:</label>
+                <input 
+                type="text" 
+                required 
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                />
+                <label>Description:</label>
+                <input 
+                type="text" 
+                required 
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                />
+                <label>Recyclable:</label>
+                <select
+                value={recyclable}
+                onChange={(e) => setRecyclable(e.target.value)}
+                >
+                <option value="true">true</option>
+                <option value="false">false</option>
+                </select>
+                <label>Quantity:</label>
+                <input 
+                type="number" 
+                required 
+                value={quantity}
+                onChange={(e) => setQuantity(e.target.value)}
+                />
+                <label>Price per Unit:</label>
+                <input 
+                type="number" 
+                required 
+                value={ppu}
+                onChange={(e) => setPPU(e.target.value)}
+                />
+                <button>Add Item</button>
+            </form>
         </div>
     );
 }
