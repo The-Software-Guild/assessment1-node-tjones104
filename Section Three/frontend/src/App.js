@@ -5,7 +5,7 @@ import PostRecyclables from "./components/postRecyclables";
 import GetRecyclables from "./components/getRecyclables";
 import PutRecyclables from "./components/putRecyclables";
 import DeleteRecyclables from "./components/deleteRecyclables";
-import UnknownPage from "./unknownpage";
+import UnknownPage from "./UnknownPage";
 import "./App.css";
 
 function App() {
