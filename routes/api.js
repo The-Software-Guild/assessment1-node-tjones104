@@ -61,7 +61,6 @@ router.put("/itemsIntake/:id", (req, res) => {
       quantity: quantity,
       ppu: ppu,
     });
-    let id = req.params.id;
     res.status(200).send();
   } else {
     res.status(404).send("The id was not found");
@@ -79,7 +78,6 @@ router.delete("/itemsIntake/:id", (req, res) => {
       return recycledItems._id == req.params.id;
     });
     recycledItems.splice(index, 1);
-    let id = req.params.id;
     res.status(200).send();
   } else {
     res.status(404).send("The id was not found");
