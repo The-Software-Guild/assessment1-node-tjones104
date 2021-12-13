@@ -1,6 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
-const cors = require('cors');
+const cors = require("cors");
 
 // Express app
 const app = express();
@@ -9,20 +9,20 @@ const app = express();
 const PORT = 8080;
 
 // application level middleware
-app.use(cors({
-  origin: true,
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: true,
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 
 // logger
 app.use(morgan("dev"));
 
 // route initialize
-app.use('/api', require('./routes/api'));
-
+app.use("/api", require("./routes/api"));
 
 app.use(express.static(`public`));
 

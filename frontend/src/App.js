@@ -1,12 +1,12 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './navbar';
-import Home from './home';
-import PostRecyclables from './pages/postRecyclables';
-import GetRecyclables from './pages/getRecyclables';
-import PutRecyclables from './pages/putRecyclables';
-import DeleteRecyclables from './pages/deleteRecyclables';
-import NotFound from './pages/NotFound';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./navbar";
+import Home from "./home";
+import PostRecyclables from "./pages/postRecyclables";
+import GetRecyclables from "./pages/getRecyclables";
+import PutRecyclables from "./pages/putRecyclables";
+import DeleteRecyclables from "./pages/deleteRecyclables";
+import NotFound from "./pages/NotFound";
+import "./App.css";
 
 function App() {
   return (
@@ -39,6 +39,5 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;

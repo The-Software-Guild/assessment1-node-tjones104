@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
 * {
   margin: 0;
   font-family: "Open Sans";
   color: rgb(0, 0, 0);
-
 }
 
 .navbar {
@@ -45,21 +43,23 @@
   padding: 5px 10px;
   margin: auto;
   border-bottom: 1px solid #fafafa;
-  box-shadow: 1px 3px 5px #76C893;
+  box-shadow: 1px 3px 5px #76c893;
 }
 
-.show-list{
+.show-list {
   width: 100%;
   padding: 5px 10px;
   margin: 20px auto;
   border-collapse: collapse;
 }
 
-.show-list th, tr, td{
+.show-list th,
+tr,
+td {
   padding: 10px 16px;
   margin: 40px auto;
   text-align: center;
-  border: 1px solid #76C893;
+  border: 1px solid #76c893;
   border-collapse: collapse;
 }
 
@@ -67,21 +67,27 @@
   padding: 10px 250px;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 1px 3px 5px #76C893;
+  box-shadow: 1px 3px 5px #76c893;
 }
 
 .put-item {
   padding: 10px 50px;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 1px 3px 5px #76C893;
+  box-shadow: 1px 3px 5px #76c893;
 }
 
-.delete-item{
+.delete-item {
   padding: 10px 50px;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 1px 3px 5px #76C893;
+  box-shadow: 1px 3px 5px #76c893;
+}
+
+.noItems {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 25px 25px;
 }
 
 h2 {
@@ -89,7 +95,7 @@ h2 {
   margin-top: auto;
 }
 
-form{
+form {
   max-width: 600px;
   margin: 40px auto;
 }
@@ -99,39 +105,38 @@ label {
   display: block;
 }
 
-input, select{
+input,
+select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #09bc8a;
   box-sizing: border-box;
   display: block;
-  background-color: #ECFEF9;
+  background-color: #ecfef9;
 }
 
 button {
   background: #09bc8a;
   color: #fff;
   border: 0;
-  padding: 8px;
+  padding: 10px;
+  margin: 15px;
   border-radius: 20px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #079C72;
+  background: #079c72;
 }
 
-
 @media screen and (max-width: 725px) {
-
   * {
     margin: 0;
     font-family: "Open Sans";
     color: rgb(0, 0, 0);
-  
   }
-  
+
   .navbar {
     padding: 10px;
     display: flex;
@@ -159,31 +164,33 @@ button:hover {
   .navbar a:hover {
     color: #09bc8a;
   }
-  
+
   .content {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
   }
-  
+
   .get-list {
     padding: 5px 10px;
     margin: auto;
     border-bottom: 1px solid #fafafa;
-    box-shadow: 1px 3px 5px #76C893;
+    box-shadow: 1px 3px 5px #76c893;
   }
-  
-  .show-list{
+
+  .show-list {
     width: 100%;
     padding: 5px 10px;
     margin: 20px auto;
     border-collapse: collapse;
   }
-  
-  .show-list th, tr, td{
+
+  .show-list th,
+  tr,
+  td {
     padding: 0px 0px;
-    margin:  0px;
-    border: 1px solid #76C893;
+    margin: 0px;
+    border: 1px solid #76c893;
     border-collapse: collapse;
   }
 
@@ -191,35 +198,36 @@ button:hover {
     display: none;
   }
 
-  td, th {
+  td,
+  th {
     text-align: left;
     display: block;
     float: left;
     width: 100%;
   }
-  
-  .name{
+
+  .name {
     font-weight: bold;
   }
-  
+
   .post-item {
     padding: 10px 50px;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 1px 3px 5px #76C893;
+    box-shadow: 1px 3px 5px #76c893;
   }
-  
+
   .put-item {
     padding: 10px 50px;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 1px 3px 5px #76C893;
+    box-shadow: 1px 3px 5px #76c893;
   }
-  
-  .delete-item{
+
+  .delete-item {
     padding: 10px 50px;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 1px 3px 5px #76C893;
+    box-shadow: 1px 3px 5px #76c893;
   }
 }
