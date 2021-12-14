@@ -24,6 +24,7 @@ app.use(morgan("dev"));
 // route initialize
 app.use("/api", require("./routes/api"));
 
+// react
 app.use(express.static(`public`));
 
 // server startup logic

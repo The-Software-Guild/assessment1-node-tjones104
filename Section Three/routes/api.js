@@ -24,22 +24,26 @@ const recycledItems = [
 
 // GET
 router.get("/itemsIntake", (req, res) => {
-  res.status(200).send(recycledItems);
+  res.status(200).send(recycledItems).catch(next);
 });
 
 // POST
 router.post("/itemsIntake", (req, res) => {
-  let { name, description, recyclable, quantity, ppu } = req.body;
-  recycledItems.push({
-    name: name,
-    description: description,
-    recyclable: recyclable,
-    quantity: quantity,
-    quantity: quantity,
-    ppu: ppu,
-    _id: uuidv4(),
-  });
-  res.status(200).send();
+  if (Object.keys(req.body).length == 5) {
+    let { name, description, recyclable, quantity, ppu } = req.body;
+    recycledItems.push({
+      name: name,
+      description: description,
+      recyclable: recyclable,
+      quantity: quantity,
+      quantity: quantity,
+      ppu: ppu,
+      _id: uuidv4(),
+    });
+    res.status(200).send(recycledItems);
+  } else {
+    res.status(404).send("Incorrect number of properties");
+  }
 });
 
 // UPDATE
