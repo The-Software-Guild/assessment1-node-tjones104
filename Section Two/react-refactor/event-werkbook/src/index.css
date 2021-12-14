@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Open Sans";
+  color: rgb(0, 0, 0);
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #ffffff;
+}
+
+.navbar h1 {
+  color: #3e29ff;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: #3e29ff;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.red-box {
+  height: 400px;
+  width: 400px;
+  background-color: #ef8989;
+  margin: auto;
+}
+
+.keypress {
+  padding: 20px;
+}
+
+.change {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.change output {
+  inline-size: 150px;
+  word-break: break-all;
+}
+
+form {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+label {
+  text-align: left;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #3e29ff;
+  box-sizing: border-box;
+  display: block;
+  background-color: #ffffff;
+}
+
+button {
+  background: #3e29ff;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(62, 41, 150);
+}
+
+p {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 725px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar h1 {
+    font-size: 10px;
+  }
+
+  .navbar a {
+    font-size: 10px;
+    margin-left: auto;
+    padding: 5px;
+  }
+
+  .red-box {
+    height: 300px;
+    width: 300px;
+    background-color: #ef8989;
+    margin: auto;
+  }
+
+  button {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+
+  p {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 0px;
+  }
+}
